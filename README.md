@@ -1,20 +1,55 @@
-# Dockerized Bookstore API
+# Dockerized-bookstore-api
 
-## Project Overview
-This project demonstrates my ability to build and deploy a modern, containerized web application using industry-standard DevOps practices. I created a RESTful Bookstore API that allows users to manage their book inventory through standard CRUD operations (Create, Read, Update, Delete).
+A containerized bookstore API demonstrating modern application deployment using Docker, Terraform, and AWS cloud infrastructure.
 
-## Technical Highlights
+## Project Highlights
 
-- **Containerized Architecture**: Built with Docker and Docker Compose for consistent deployment and scalability
-- **Infrastructure as Code**: Automated AWS infrastructure deployment using Terraform
-- **Modern Tech Stack**: Python Flask for the API, MySQL for data persistence
-- **Cloud-Native**: Deployed on AWS EC2 with proper security configurations
-- **RESTful Design**: Full CRUD operations for book management (add, view, update, delete books)
+✨ Automated cloud infrastructure deployment with Terraform  
+✨ Containerized application using Docker and Docker Compose  
+✨ RESTful API with database integration  
+✨ Infrastructure as Code implementation
 
-## Why This Matters
-This project showcases my ability to:
-- Build production-ready containerized applications
-- Implement infrastructure as code practices
-- Deploy secure cloud applications
-- Design RESTful APIs following best practices
-- Work with modern DevOps tools and workflows
+## Key Features
+
+• Cloud Automation
+  - Infrastructure as Code with Terraform
+  - Automated AWS resource provisioning
+  - Container orchestration with Docker Compose
+
+• Application Design
+  - RESTful API architecture
+  - Containerized services
+  - Persistent data storage
+
+• Development Practices
+  - Microservices approach
+  - Infrastructure automation
+  - Container-based deployment
+
+
+## Quick Start
+
+1. **Setup Infrastructure**
+   ```bash
+   # Initialize Terraform
+   terraform init
+
+   # Deploy infrastructure
+   terraform apply
+   ```
+
+2. **Access API**
+   ```bash
+   # Get books
+   curl http://[ec2-hostname]/books
+
+   # Add book
+   curl -X POST http://[ec2-hostname]/books
+   ```
+
+3. **API Endpoints**
+   - List all books: GET `/books`
+   - Get specific book: GET `/books/123`
+   - Create book: POST `/books`
+   - Update book: PUT `/books/123`
+   - Delete book: DELETE `/books/123`
